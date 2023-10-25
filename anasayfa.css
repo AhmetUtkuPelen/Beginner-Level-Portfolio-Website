@@ -1,0 +1,448 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+}
+
+body{
+min-height: 100vh;
+background: rgb(14,0,255);
+background: linear-gradient(90deg, rgba(14,0,255,1) 0%, rgba(0,212,255,1) 100%, rgba(255,255,255,1) 100%);
+justify-content: space-between;
+}
+
+
+
+
+.adam{
+height: 800px;
+width: 550px;
+padding-bottom: 100px;
+display: flex;
+position: absolute;
+border: 1px white transparent;
+border-radius: 50%;
+}
+
+
+.adam:hover{
+left: 10px;
+bottom: 10px;
+transition: 2s;
+}
+
+
+.arka{
+
+}
+
+.arkaplan{
+position: relative;
+display: flex;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+margin-top: -570px;
+z-index: -100;
+}
+
+.sosyal{
+font-size: 85px;
+text-align: center;
+color: white;
+height:fit-content;
+display:grid;
+justify-content: left;
+margin-top: -700px;
+padding-top: 20px;
+gap: 5px;
+}
+
+
+.logo1{
+border: 1px darkgoldenrod solid;
+border-radius: 50%;
+color: gold;
+background: black;
+}
+    
+.logo1:hover{
+background-color: darkgoldenrod;
+color: white;
+transition: 2s;
+}
+
+.logo2{
+border: 1px darkgoldenrod solid;
+border-radius: 50%;
+color: gold;
+padding-top: 5px;
+background: black;
+}
+
+.logo2:hover{
+background-color: darkgoldenrod;
+color: white;
+transition: 2s;
+}
+
+.logo3{
+border: 1px darkgoldenrod solid;
+border-radius: 50%;
+color: gold;
+background: black;
+}
+
+.logo3:hover{
+background-color: darkgoldenrod;
+color: white;
+transition: 2s;
+}
+ 
+.logo4{
+border: 1px darkgoldenrod solid;
+border-radius: 50%;
+color: gold;
+background: black;
+padding-top: 8px;
+padding-left: 5px;
+padding-right: 5px;
+padding-bottom: 8px;
+}
+
+.logo4:hover{
+background-color: darkgoldenrod;
+color: white;
+transition: 2s;
+}
+
+.logo5{
+border: 1px darkgoldenrod solid;
+border-radius: 50%;
+color: gold;
+background: black;
+}
+
+.logo5:hover{
+background-color: darkgoldenrod;
+color: white;
+transition: 2s;
+}
+
+
+.balonlar{
+position: relative;
+display: flex;
+}
+
+.balonlar span{
+position: relative;
+width: 30px;
+height: 30px;
+background: lightsteelblue;
+margin: 0 4px;
+border-radius: 50%;
+box-shadow: 0 0 0 3px black,
+0 0 0 2px white,
+0 0 0 5px white;
+animation: animate5 linear infinite;
+animation-duration: calc(120s / var(--i));
+}
+
+.balonlar span:nth-child(even)
+{
+background: white;
+box-shadow: 0 0 0 3px black,
+0 0 0 1px white,
+0 0 0 2px white;
+}
+
+
+header{
+font-family: 'Times New Roman', Times, serif;
+z-index: -100;
+
+
+}
+
+.navbar{
+background: black;
+height: 100px;
+width: calc(100% - 10px);
+display: flex;
+padding-left: 20px;
+align-items: center;
+justify-content: space-between;
+margin: 0 auto;
+padding-right: 50px;
+}
+
+
+.navbar .logo{
+height: 100px;
+}
+
+
+
+/* anasayfadaki açıklama yazılarıma başlıyom */
+
+
+.name{
+font-size: 150px;
+display: flex;
+color: darkgoldenrod;
+width:fit-content;
+text-transform: uppercase;
+height: fit-content;
+cursor: crosshair;
+position: absolute;
+padding: 50px;
+margin-left: 400px;
+text-align:center;
+}
+
+.name:hover{
+color: yellow;
+transition: 2s;
+}
+
+.ben{
+height: 700px;
+width: 600px;
+border: 1px white transparent;
+border-radius: 50%;
+}
+
+.ben:hover{
+height: 750px;
+width: 650px;
+transition: 2s;
+}
+
+
+.aciklama{
+font-size: 100px;
+color: lightcyan;
+width: fit-content;
+display: flex;
+position: absolute;
+width: fit-content;
+height: 100px;
+margin-left: 600px;
+margin-top: 420px;
+border: 1px white transparent;
+letter-spacing: 5px;
+text-align: center;
+}
+
+.aciklama:hover{
+color: darkslategrey;
+transition: 2s;
+}
+
+
+.shiny{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100px;
+background-color: black;
+text-transform: uppercase;
+cursor: not-allowed;
+}
+
+.shiny a{
+position: relative;
+display: inline-block;
+letter-spacing: 5px;
+color:white;
+font-size: 20px;
+font-weight: bold;
+transition: 0.5s;
+overflow: hidden;
+gap: 30px;
+margin-right: 150px;
+}
+
+
+
+
+
+
+.shiny a:hover{
+background-color:tomato ;
+color: black;
+box-shadow: 0 0 5px yellow, 
+            0 0 25px yellow,
+            0 0 50px yellow,
+            0 0 100px yellow,
+            ;
+            -webkit-box-reflect: above 1px linear-gradient(transparent, black) ;
+}
+
+
+
+.shiny a:first-child{
+filter: hue-rotate(225deg);
+}
+
+.shiny a:last-child{
+filter: hue-rotate(90deg);
+}
+
+.shiny a span{
+position: absolute;
+display: block;
+}
+
+
+::-webkit-scrollbar{
+width: 10px;
+cursor: not-allowed;
+}
+
+::-webkit-scrollbar-track{
+background: darkgray;
+cursor: not-allowed;
+}
+
+::-webkit-scrollbar-thumb{
+background: crimson;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background: lightgray;
+}
+
+
+
+
+.shiny a span:nth-child(1)
+{
+top: 0;
+left: 0;
+width: 100%;
+height: 2px;
+background: linear-gradient(90deg,transparent,tomato);
+animation: animate1 1s infinite;
+animation-delay: 1s;
+}
+
+@keyframes animate1 {
+0%
+{
+left: -100%;
+}
+
+100%
+{
+left: 100%;
+}
+}
+
+
+.shiny a span:nth-child(2)
+{
+top: -100%;
+right: 0%;
+width: 1px;
+height: 100%;
+background: linear-gradient(180deg,transparent, yellow);
+animation: animate2 1s infinite;
+animation-delay: 1s;
+}
+
+@keyframes animate2 {
+    0%
+    {
+    top: -100%;
+    }
+    
+    100%
+    {
+    top: 100%;
+    }
+    }
+
+
+.shiny a span:nth-child(3)
+{
+bottom: 0;
+right: 0;
+width: 100%;
+height: 1px;
+background: linear-gradient(270deg,transparent,tomato);
+animation: animate3 1s infinite;
+animation-delay: 1s;
+}
+
+@keyframes animate3{
+0%{
+right: -100%;
+}
+100%{
+right: 100%;
+}
+}
+
+
+.shiny a span:nth-child(4)
+{
+bottom: -100%;
+left: 0;
+width: 1px;
+height: 100%;
+background: linear-gradient(360deg,transparent,tomato);
+animation: animate4 1s infinite;
+animation-delay: 1s;
+}
+
+
+@keyframes animate4{
+
+0%{
+bottom: -100%;
+}
+
+100%{
+bottom: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+@keyframes animate5{
+
+
+0%  {
+
+transform: translateY(100vh) scale(0);
+
+    }
+
+
+100%  {
+transform: translateY(-10vh) scale(1);
+
+      }
+
+}
+
+
+
+@media screen and (max-width:1024px) {
+.navbar{
+height: 250px;
+}    
+
+}
+
